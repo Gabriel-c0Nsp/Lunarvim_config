@@ -1,3 +1,5 @@
+// classe para testar as configurações
+
 import java.util.Scanner;
 
 public public class Teste {

@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-
 local term_opts = { silent = true}
 -- shorten funciton name 
 keymap = vim.api.nvim_set_keymap
@@ -60,6 +59,8 @@ function DecrementNumber()
     end
 end
 
--- Mapear as teclas '+' e '_' para as funções de incremento e decremento
+-- + para incrementar número abaixo do cursor
 vim.api.nvim_set_keymap('n', '+', ':lua IncrementNumber()<CR>', opts)
+
+-- _ para decrementar número abaixo do cursor
 vim.api.nvim_set_keymap('n', '_', ':lua DecrementNumber()<CR>', opts)

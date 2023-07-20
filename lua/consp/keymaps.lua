@@ -1,17 +1,12 @@
 -- comandos que eu pego da internet e colo aqui
 
+local keymap = vim.keymap
 
 -- Remapear jk para Esc
--- vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true })
-
-local keymap = vim.keymap
+-- keymap.set('i', 'jk', '<Esc>', opts)
 
 -- do not yank text deleted with x
 keymap.set('n', 'x', '"_x')
-
--- Increment/decrement
--- keymap.set('n', '+', '<C-k>')
--- keymap.set('n', '-', '<C-x>')
 
 -- Delete a word backwards
 -- keymap.set('n', 'dw', 'vb"_d')
@@ -44,7 +39,6 @@ keymap.set('n', 'vs', ':vsplit<Return><C-w>w')
 
 
 local opts = { noremap = true, silent = true }
-
 local term_opts = { silent = true}
 
 -- shorten funciton name 
@@ -59,4 +53,3 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-3<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-3<CR>gv-gv", opts)
-

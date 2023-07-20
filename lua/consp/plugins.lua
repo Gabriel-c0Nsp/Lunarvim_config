@@ -5,4 +5,3 @@ lvim.plugins = {
     { "ThePrimeagen/vim-be-good" },
     -- { "tribela/vim-transparent" },
 }
-

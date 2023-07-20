@@ -1,10 +1,3 @@
---Relative number
-lvim.line_wrap_cursor_movement = true 
-vim.opt.relativenumber = true
-
--- Terminal --
-lvim.keys.normal_mode["<F5>"] = ":lua require('plugins.telescope').search_dotfiles()<CR>"
-lvim.keys.normal_mode["<C-t>"] = ":ToggleTerm<CR>"
 
 -- lvim.builtin.alpha.dashboard.section.header.val = {
 --   "    __                          _    ___         ",
@@ -14,9 +7,8 @@ lvim.keys.normal_mode["<C-t>"] = ":ToggleTerm<CR>"
 --   "/_____/\\__,_/_/ /_/\\__,_/_/    |___/_/_/ /_/ /_/ ",
 -- }
 
--- lvim.colorscheme = "onedark"
--- lvim.colorscheme = "darkplus"
--- lvim.colorscheme = "primer_dark"
+-- Terminal --
+lvim.keys.normal_mode["<C-t>"] = ":ToggleTerm<CR>"
 -- lvim.log.level = "warn"
 -- lvim.builtin.alpha.active = true
 -- lvim.reload_config_on_save = false
@@ -40,19 +32,19 @@ lvim.builtin.dap.active = true
 
 -- local options = {
 --   backup = false, -- creates a backup file
-  -- clipboard = "unnamedplus", -- allows neovim to access the system clipboard
---   cmdheight = 1, -- more space in the neovim command line for displaying messages
+vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
+vim.opt.cmdheight = 0 -- more space in the neovim command line for displaying messages
 --   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 --   conceallevel = 0, -- so that `` is visible in markdown files
 --   fileencoding = "utf-8", -- the encoding written to a file
 --   hlsearch = true, -- highlight all matches on previous search pattern
---   ignorecase = true, -- ignore case in search patterns
+ignorecase = true -- ignore case in search patterns
 --   mouse = "a", -- allow the mouse to be used in neovim
 --   pumheight = 10, -- pop up menu height
 --   showmode = false, -- we don't need to see things like -- INSERT -- anymore
 --   showtabline = 0, -- always show tabs
--- smartcase = true, -- smart case
--- smartindent = true, -- make indenting smarter again
+--   smartcase = true, -- smart case
+vim.opt.smartindent = true -- make indenting smarter again
 --   splitbelow = true, -- force all horizontal splits to go below current window
 --   splitright = true, -- force all vertical splits to go to the right of current window
 --   swapfile = false, -- creates a swapfile
@@ -64,12 +56,12 @@ lvim.builtin.dap.active = true
 --   expandtab = true, -- convert tabs to spaces
 --   shiftwidth = 2, -- the number of spaces inserted for each indentation
 --   tabstop = 2, -- insert 2 spaces for a tab
-  -- lvim.cursorline = true -- highlight the current line
+vim.opt.cursorline = true -- highlight the current line
 --   number = true, -- set numbered lines
 --   laststatus = 3,
---   showcmd = false,
+vim.opt.showcmd = true
 --   ruler = false,
---   relativenumber = true, -- set relative numbered lines
+vim.opt.relativenumber = true -- set relative numbered lines
 --   numberwidth = 4, -- set number column width to 2 {default 4}
 --   signcolumn = "yes", -- always show the sign column, otherwise it would shift the text each time
 --   wrap = false, -- display lines as one long line
