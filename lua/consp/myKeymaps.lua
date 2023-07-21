@@ -30,6 +30,8 @@ keymap("v", "1", "$", opts)
 -- enter além de descer a tela também cria linha nova se preciso 
 keymap("n", "<CR>", "o<Esc>", opts)
 
+-- shotcut para o plugin vim be good
+keymap("c", "vbg", "<Esc>nt:VimBeGood<CR>", { noremap = false, silent = false } )
 
 -- Função para incrementar o número abaixo do cursor
 function IncrementNumber()
@@ -60,7 +62,7 @@ function DecrementNumber()
 end
 
 -- + para incrementar número abaixo do cursor
-vim.api.nvim_set_keymap('n', '+', ':lua IncrementNumber()<CR>', opts)
+keymap('n', '+', ':lua IncrementNumber()<CR>', opts)
 
 -- _ para decrementar número abaixo do cursor
-vim.api.nvim_set_keymap('n', '_', ':lua DecrementNumber()<CR>', opts)
+keymap('n', '_', ':lua DecrementNumber()<CR>', opts)

@@ -5,10 +5,13 @@
 --   "  / /   / / / / __ \\/ __ `/ ___/ | / / / __ `__ \\",
 --   " / /___/ /_/ / / / / /_/ / /   | |/ / / / / / / /",
 --   "/_____/\\__,_/_/ /_/\\__,_/_/    |___/_/_/ /_/ /_/ ",
+--   "                                                 ",
+--   "                Bem-vindo Gabriel               ",
 -- }
 
 -- Terminal --
 lvim.keys.normal_mode["<C-t>"] = ":ToggleTerm<CR>"
+
 -- lvim.log.level = "warn"
 -- lvim.builtin.alpha.active = true
 -- lvim.reload_config_on_save = false
@@ -20,7 +23,7 @@ lvim.builtin.terminal.persist_mode = true
 -- lvim.builtin.breadcrumbs.active = true
 lvim.builtin.dap.active = true
 -- lvim.keys.term_mode = { ["<C-l>"] = false }
-
+lvim.format_on_save = true
 
 -- -- lvim.builtin.cmp.formatting = {
 -- --     format = require("tailwindcss-colorizer-cmp").formatter
@@ -33,7 +36,7 @@ lvim.builtin.dap.active = true
 -- local options = {
 --   backup = false, -- creates a backup file
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
-vim.opt.cmdheight = 0 -- more space in the neovim command line for displaying messages
+vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages
 --   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 --   conceallevel = 0, -- so that `` is visible in markdown files
 --   fileencoding = "utf-8", -- the encoding written to a file
