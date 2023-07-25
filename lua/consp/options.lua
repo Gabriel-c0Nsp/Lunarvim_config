@@ -1,14 +1,3 @@
--- lvim.builtin.alpha.dashboard.section.header.val = {
---   "    __                          _    ___         ",
---   "   / /   __  ______  ____ _____| |  / (_)___ ___ ",
---   "  / /   / / / / __ \\/ __ `/ ___/ | / / / __ `__ \\",
---   " / /___/ /_/ / / / / /_/ / /   | |/ / / / / / / /",
---   "/_____/\\__,_/_/ /_/\\__,_/_/    |___/_/_/ /_/ /_/ ",
---   "                                                 ",
---   "                Bem-vindo Gabriel               ",
--- }
-
-
 vim.opt.timeoutlen = 300 
 -- lvim.log.level = "warn"
 -- lvim.builtin.alpha.active = true

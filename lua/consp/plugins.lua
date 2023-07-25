@@ -10,8 +10,8 @@ lvim.plugins = {
   { "mfussenegger/nvim-dap" },
   { "rcarriga/cmp-dap" },
   { "mfussenegger/nvim-jdtls" },
- { "junegunn/fzf",  build = "./install --bin"},
- { "ibhagwan/fzf-lua"},
+  { "junegunn/fzf",  build = "./install --bin"},
+  { "ibhagwan/fzf-lua"},
 
 {
   "folke/persistence.nvim",

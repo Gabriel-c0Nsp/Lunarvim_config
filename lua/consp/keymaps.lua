@@ -2,7 +2,7 @@
 
 local keymap = vim.keymap
 
--- Remapear jk para Esc
+-- Remapear jk para Esc (costumo usar no teclado do notebook)
 -- keymap.set('i', 'jk', '<Esc>', opts)
 
 -- do not yank text deleted with x

@@ -7,6 +7,8 @@ Implements 4 methods:
   get_current_full_method_name(delimiter) - return a full method name (package + class + [delimiter] + method name)
 --]]
 
+-- arquivo útil apenas para o termux, não se aplica para pc 
+
 local ts_utils = require'nvim-treesitter.ts_utils'
 
 local M = {}

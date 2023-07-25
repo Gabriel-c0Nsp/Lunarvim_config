@@ -44,9 +44,11 @@ vim.api.nvim_set_keymap("c", ";", [[<cmd>lua require("persistence").load({ last 
 -- stop Persistence => session won't be saved on exit
 vim.api.nvim_set_keymap("c", "sair", [[<cmd>lua require("persistence").stop()<cr>]], {})
 -- lv-config.lua
-
 -- configura plugin Alpha para abrir a última sessão usando 'u' (e plugin persistence)
 lvim.builtin.which_key.mappings["u"] = { "<cmd>lua require('persistence').load({ last = true })<CR>", "Load Last Session" }
+
+-- keymap para chamar o fzf de forma mais prática
+keymap("n", "<C-f>", ":lua require('fzf-lua').files()<CR>", opts);
 
 -- Função para incrementar o número abaixo do cursor
 function IncrementNumber()
