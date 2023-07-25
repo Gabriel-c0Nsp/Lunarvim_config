@@ -1,4 +1,3 @@
-
 -- lvim.builtin.alpha.dashboard.section.header.val = {
 --   "    __                          _    ___         ",
 --   "   / /   __  ______  ____ _____| |  / (_)___ ___ ",
@@ -9,9 +8,8 @@
 --   "                Bem-vindo Gabriel               ",
 -- }
 
--- Terminal --
-lvim.keys.normal_mode["<C-t>"] = ":ToggleTerm<CR>"
 
+vim.opt.timeoutlen = 300 
 -- lvim.log.level = "warn"
 -- lvim.builtin.alpha.active = true
 -- lvim.reload_config_on_save = false
@@ -39,7 +37,7 @@ vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboar
 vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages
 --   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 --   conceallevel = 0, -- so that `` is visible in markdown files
---   fileencoding = "utf-8", -- the encoding written to a file
+fileencoding = "utf-8" -- the encoding written to a file
 --   hlsearch = true, -- highlight all matches on previous search pattern
 ignorecase = true -- ignore case in search patterns
 --   mouse = "a", -- allow the mouse to be used in neovim
@@ -62,7 +60,7 @@ vim.opt.smartindent = true -- make indenting smarter again
 vim.opt.cursorline = true -- highlight the current line
 --   number = true, -- set numbered lines
 --   laststatus = 3,
-vim.opt.showcmd = true
+-- vim.opt.showcmd = true
 --   ruler = false,
 vim.opt.relativenumber = true -- set relative numbered lines
 --   numberwidth = 4, -- set number column width to 2 {default 4}

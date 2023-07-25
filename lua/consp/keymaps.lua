@@ -37,7 +37,6 @@ keymap.set('n', 'vs', ':vsplit<Return><C-w>w')
 -- keymap.set('n', '<C-w><up>', '<C-w>+')
 -- keymap.set('n', '<C-w><down>', '<C-w>-')
 
-
 local opts = { noremap = true, silent = true }
 local term_opts = { silent = true}
 

@@ -5,7 +5,7 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 require("consp.options")
-require("consp.plugins")
-require("consp.themes")
 require("consp.keymaps")
 require("consp.myKeymaps")
+require("consp.plugins")
+require("consp.themes")
