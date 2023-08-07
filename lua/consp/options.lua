@@ -1,4 +1,4 @@
-vim.opt.timeoutlen = 300 
+vim.opt.timeoutlen = 300
 -- lvim.log.level = "warn"
 -- lvim.builtin.alpha.active = true
 -- lvim.reload_config_on_save = false
@@ -12,6 +12,7 @@ lvim.builtin.dap.active = true
 -- lvim.keys.term_mode = { ["<C-l>"] = false }
 lvim.format_on_save = true
 
+
 -- -- lvim.builtin.cmp.formatting = {
 -- --     format = require("tailwindcss-colorizer-cmp").formatter
 -- -- }
@@ -23,12 +24,12 @@ lvim.format_on_save = true
 -- local options = {
 --   backup = false, -- creates a backup file
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
-vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages
+vim.opt.cmdheight = 1             -- more space in the neovim command line for displaying messages
 --   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 --   conceallevel = 0, -- so that `` is visible in markdown files
 fileencoding = "utf-8" -- the encoding written to a file
 --   hlsearch = true, -- highlight all matches on previous search pattern
-ignorecase = true -- ignore case in search patterns
+ignorecase = true      -- ignore case in search patterns
 --   mouse = "a", -- allow the mouse to be used in neovim
 --   pumheight = 10, -- pop up menu height
 --   showmode = false, -- we don't need to see things like -- INSERT -- anymore
@@ -46,7 +47,7 @@ vim.opt.smartindent = true -- make indenting smarter again
 --   expandtab = true, -- convert tabs to spaces
 --   shiftwidth = 2, -- the number of spaces inserted for each indentation
 --   tabstop = 2, -- insert 2 spaces for a tab
-vim.opt.cursorline = true -- highlight the current line
+vim.opt.cursorline = false -- highlight the current line
 --   number = true, -- set numbered lines
 --   laststatus = 3,
 -- vim.opt.showcmd = true
@@ -88,4 +89,3 @@ vim.opt.relativenumber = true -- set relative numbered lines
 --     conf = "dosini",
 --   },
 -- }
-

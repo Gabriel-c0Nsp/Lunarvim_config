@@ -2,8 +2,8 @@
 
 local keymap = vim.keymap
 
--- Remapear jk para Esc (costumo usar no teclado do notebook)
--- keymap.set('i', 'jk', '<Esc>', opts)
+-- Remapear jk para Esc
+keymap.set('i', 'jk', '<Esc>', opts)
 
 -- do not yank text deleted with x
 keymap.set('n', 'x', '"_x')
@@ -37,10 +37,11 @@ keymap.set('n', 'vs', ':vsplit<Return><C-w>w')
 -- keymap.set('n', '<C-w><up>', '<C-w>+')
 -- keymap.set('n', '<C-w><down>', '<C-w>-')
 
-local opts = { noremap = true, silent = true }
-local term_opts = { silent = true}
 
--- shorten funciton name 
+local opts = { noremap = true, silent = true }
+local term_opts = { silent = true }
+
+-- shorten funciton name
 keymap = vim.api.nvim_set_keymap
 --
 -- Stay text indent mode
