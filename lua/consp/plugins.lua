@@ -8,11 +8,6 @@ lvim.plugins = {
   { "sitiom/nvim-numbertoggle" },
   { "overcache/NeoSolarized" },
   { "mattn/emmet-vim" },
-  -- { "mfussenegger/nvim-dap" },
-  -- { "rcarriga/cmp-dap" },
-  -- { "mfussenegger/nvim-jdtls" },
-  -- { "junegunn/fzf",             build = "./install --bin" },
-  -- { "ibhagwan/fzf-lua" },
 
   {
     "folke/persistence.nvim",
