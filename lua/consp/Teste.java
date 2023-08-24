@@ -1,14 +1,12 @@
-// classe para testar as configurações
-
 import java.util.Scanner;
 
-public public class Teste {
+public class Teste {
   public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);
 
-    int a = 34;
-    int b = 65;
+    int a = scanner.nextInt();
+    int b = scanner.nextInt();
     int c = scanner.nextInt();
 
     int soma = a + b + c;
@@ -16,6 +14,5 @@ public public class Teste {
     System.out.println(soma);
 
     scanner.close();
-
   }
 }

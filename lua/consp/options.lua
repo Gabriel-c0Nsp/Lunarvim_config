@@ -27,12 +27,12 @@ vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboar
 vim.opt.cmdheight = 1             -- more space in the neovim command line for displaying messages
 --   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 --   conceallevel = 0, -- so that `` is visible in markdown files
-fileencoding = "utf-8" -- the encoding written to a file
+vim.opt.fileencoding = "utf-8" -- the encoding written to a file
 --   hlsearch = true, -- highlight all matches on previous search pattern
-ignorecase = true      -- ignore case in search patterns
+vim.opt.ignorecase = true      -- ignore case in search patterns
 --   mouse = "a", -- allow the mouse to be used in neovim
 --   pumheight = 10, -- pop up menu height
---   showmode = false, -- we don't need to see things like -- INSERT -- anymore
+vim.opt.showmode = true -- we don't need to see things like -- INSERT -- anymore
 --   showtabline = 0, -- always show tabs
 --   smartcase = true, -- smart case
 vim.opt.smartindent = true -- make indenting smarter again
@@ -79,10 +79,10 @@ vim.opt.relativenumber = true -- set relative numbered lines
 -- for k, v in pairs(options) do
 --   vim.opt[k] = v
 -- end
-
 -- vim.cmd "set whichwrap+=<,>,[,],h,l"
 -- vim.cmd [[set iskeyword+=-]]
 -- vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+vim.cmd [[set guicursor=n-v-c-i:block]]
 
 -- vim.filetype.add {
 --   extension = {
